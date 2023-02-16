@@ -1,11 +1,26 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"time"
 )
 
-func main() {
+func KentekeninGeven() {
+
+	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Print("Type je kenteken: ")
+	scanner.Scan()
+	input := scanner.Text()
+	if input == "Ka-as-01" {
+		GetTime()
+	} else {
+		fmt.Println("geen overeen koment kenteken")
+	}
+	fmt.Println("je kentaken is:", input)
+}
+func GetTime() {
 	hour := time.Now().Hour()
 	fmt.Println("Welkom bij Fonteyn Vakantieparken!")
 	if hour > 23 {

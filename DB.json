@@ -1,0 +1,9 @@
+{
+    "database" : {
+        "pswd" : "",
+        "server" : "",
+        "name" : "",
+        "username" : "",
+        "port" : 3306
+    }
+}

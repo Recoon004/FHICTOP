@@ -7,6 +7,20 @@ import (
 	"time"
 )
 
+type configuration struct {
+
+		port int
+		pswd string
+		server string
+		Username string `json:"Username"`
+		Databasename string `json:"Databasename"`
+
+}
+var config configuration error
+file, _ := os.Open("DB.json")
+json := json.NewDecoder(file)
+json.Decode(&config)
+
 func KentekeninGeven() {
 
 	scanner := bufio.NewScanner(os.Stdin)

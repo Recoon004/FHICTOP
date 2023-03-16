@@ -1,9 +1,9 @@
 {
     "database" : {
         "pswd" : "",
-        "server" : "",
-        "name" : "",
-        "username" : "",
+        "server" : "127.0.0.1",
+        "name" : "slagboom",
+        "username" : "root",
         "port" : 3306
     }
 }

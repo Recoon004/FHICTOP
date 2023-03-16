@@ -7,21 +7,20 @@ import (
 	"time"
 )
 
-type configuration struct {
+//type configuration struct {
+//	port         int
+//	pswd         string
+//	server       string
+//	Username     string `json:"Username"`
+//	Databasename string `json:"Databasename"`
+//}
 
-		port int
-		pswd string
-		server string
-		Username string `json:"Username"`
-		Databasename string `json:"Databasename"`
-
-}
-var config configuration error
-file, _ := os.Open("DB.json")
-json := json.NewDecoder(file)
-json.Decode(&config)
-
-func KentekeninGeven() {
+// var config configuration = configuration{
+// file, _ := os.Open("DB.json")
+// json := json.NewDecoder(file)
+// json.Decode(&config)
+// }
+func main() {
 
 	scanner := bufio.NewScanner(os.Stdin)
 	fmt.Print("Type je kenteken: ")
